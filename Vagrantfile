@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
 			bash /vagrant/raid.sh
 			bash /vagrant/install_gluster.sh
 			bash /vagrant/web_setup.sh
-			bash /vagrant/monitoring_setup.sh
+			bash /vagrant/ganglia_setup.sh
 			sudo reboot
 		SHELL
 		
@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
 			bash /vagrant/raid.sh
 			bash /vagrant/install_gluster.sh
 			bash /vagrant/web_setup.sh
-			bash /vagrant/monitoring_setup.sh
+			bash /vagrant/ganglia_setup.sh
 			sudo reboot
 		SHELL
 		
