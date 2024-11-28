@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 		web1.vm.provider "virtualbox" do |vb|
 			vb.name = "web1"
 			vb.memory = 2048
-			vb.cpus = 1
+			vb.cpus = 3
 		end
 		web1.vm.hostname = "web1"
 		web1.vm.synced_folder shared_folder, "/vagrant"
@@ -36,7 +36,7 @@ Vagrant.configure("2") do |config|
 		web2.vm.provider "virtualbox" do |vb|
 			vb.name = "web2"
 			vb.memory = 2048
-			vb.cpus = 1
+			vb.cpus = 3
 		end
 		web2.vm.hostname = "web2"
 		web2.vm.synced_folder shared_folder, "/vagrant"
