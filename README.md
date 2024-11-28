@@ -1,5 +1,7 @@
-How to run: 
+## How to Run
 
-Just open up a terminal and run ./build.ps1, it should take about 30 minutes for everything to be ready.
+1. **Run the Build Script**  
+   Open a terminal and navigate to the directory where `build.ps1` is located. Then, execute the following command:
 
-Access http://192.168.30.121/cacti/ to finish cacti's installation.
+   ```bash
+   ./build.ps1
