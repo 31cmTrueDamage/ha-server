@@ -1,0 +1,1 @@
+{"disk":[{"uuid":"3d604118-b10f-45f8-a011-5a183a1245dd","name":"sdc","controller":"SCSI","port":"2","device":"0"},{"uuid":"e531ad75-adc0-4c82-b0a7-5e1a4cbe7e1a","name":"sdd","controller":"SCSI","port":"3","device":"0"}],"floppy":[],"dvd":[]}
