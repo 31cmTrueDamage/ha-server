@@ -5,3 +5,5 @@
 
    ```bash
    ./build.ps1
+
+It should take about 30 minutes for everything to be ready.
