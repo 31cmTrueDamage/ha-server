@@ -1,5 +1,3 @@
-This project provides a **fully automated environment** for deploying and testing a high availability (HA) server infrastructure using Vagrant. The setup includes:
-
 ## Project Overview
 
 This project provides a **fully automated environment** for deploying and testing a high-availability (HA) server infrastructure using **Vagrant**. The setup includes the following key components:
