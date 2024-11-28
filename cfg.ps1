@@ -54,7 +54,7 @@ if ($?) {
 
 # Run mariadb_setup1.sh on sql1
 $sql1VmConfig = "sql1"
-Write-Host "Executing mariadb_setup1.sh on $sql1Vm"
+Write-Host "Executing mariadb_setup1.sh on $sql1VmConfig"
 vagrant ssh $sql1VmConfig -c "bash $mariadbSetup1ScriptPath"
 if ($?) {
     Write-Host "Successfully executed mariadb_setup1.sh on $sql1Vm."
