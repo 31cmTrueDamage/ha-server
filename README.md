@@ -11,7 +11,7 @@ This project provides a **fully automated environment** for deploying and testin
 - **Vagrant**: Automates the creation and configuration of virtual machines, enabling easy and reproducible environments for testing and development.
 
 ### Architecture Highlights:
-- Two **load-balanced web servers** are deployed, ensuring high availability for your web application.
+- Two **load-balanced web servers** are deployed, ensuring high availability for the web applications.
 - **Pacemaker & Corosync** manage the failover and clustering of **HAProxy nodes** and **MariaDB nodes**, ensuring that these critical components remain highly available and resilient to failures.
 
 
