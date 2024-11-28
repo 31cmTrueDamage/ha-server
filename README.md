@@ -1,9 +1,21 @@
 This project provides a **fully automated environment** for deploying and testing a high availability (HA) server infrastructure using Vagrant. The setup includes:
 
-- **Corosync & Pacemaker**: Clustering and resource management for high availability and automatic failover.
-- **GlusterFS**: A distributed file system for redundancy and high availability of data.
-- **HAProxy**: A load balancer to distribute traffic across HA setup and ensure even load balancing.
-- **Vagrant**: Automates virtual machine setup and configuration, enabling reproducible environments.
+## Project Overview
+
+This project provides a **fully automated environment** for deploying and testing a high-availability (HA) server infrastructure using **Vagrant**. The setup includes the following key components:
+
+- **Corosync & Pacemaker**: Used for clustering and resource management, ensuring high availability and automatic failover. **Pacemaker** and **Corosync** are specifically used to manage the **HAProxy nodes** and **MariaDB nodes**, providing fault tolerance and seamless failover for both.
+
+- **GlusterFS**: A distributed file system for data redundancy and high availability, ensuring that the storage layer is resilient and can withstand node failures.
+
+- **HAProxy**: A high-performance load balancer used to distribute traffic evenly across the two **load-balanced web servers**. The HAProxy nodes are also managed by **Pacemaker & Corosync** for high availability.
+
+- **Vagrant**: Automates the creation and configuration of virtual machines, enabling easy and reproducible environments for testing and development.
+
+### Architecture Highlights:
+- Two **load-balanced web servers** are deployed, ensuring high availability for your web application.
+- **Pacemaker & Corosync** manage the failover and clustering of **HAProxy nodes** and **MariaDB nodes**, ensuring that these critical components remain highly available and resilient to failures.
+
 
 ## How to Run
 
