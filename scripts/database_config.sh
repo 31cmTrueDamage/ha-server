@@ -18,8 +18,8 @@ sudo mysql -u root -e "GRANT ALL PRIVILEGES ON ${CACTI_DB}.* TO '${CACTI_USER}'@
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON ${GANGLIA_DB}.* TO '${GANGLIA_USER}'@'192.168.30.121' IDENTIFIED BY '${GANGLIA_PASS}';"
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON ${GANGLIA_DB}.* TO '${GANGLIA_USER}'@'192.168.30.122' IDENTIFIED BY '${GANGLIA_PASS}';"
 
-mysql -u root -e "GRANT SELECT ON mysql.time_zone_name TO cacti'@'192.168.30.121'; FLUSH PRIVILEGES;"
-mysql -u root -e "GRANT SELECT ON mysql.time_zone_name TO cacti'@'192.168.30.122'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "GRANT SELECT ON mysql.time_zone_name TO 'cacti'@'192.168.30.121'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "GRANT SELECT ON mysql.time_zone_name TO 'cacti'@'192.168.30.122'; FLUSH PRIVILEGES;"
 
 # Flush privileges
 sudo mysql -u root -e "FLUSH PRIVILEGES;"
