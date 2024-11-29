@@ -92,11 +92,15 @@ if ($?) {
     Write-Host "Error: databaseConfig.sh execution failed on $sql1VmConfig."
 }
 
-$webDeploy = "web1"
-Write-Host "Executing web_setup1.sh on $webDeploy"
-vagrant ssh $webDeploy -c "bash $webSetup1Path"
-if ($?) {
-    Write-Host "Successfully executed web_setup1.sh on $webDeploy."
-} else {
-    Write-Host "Error: web_setup1.sh execution failed on $webDeploy."
+$webDeploys = @("web1", "web2")
+
+foreach ($webDeploy in $webDeploys) {
+    Write-Host "Executing web_setup1.sh on $webDeploy"
+    vagrant ssh $webDeploy -c "bash $webSetup1Path"
+    
+    if ($?) {
+        Write-Host "Successfully executed web_setup1.sh on $webDeploy."
+    } else {
+        Write-Host "Error: web_setup1.sh execution failed on $webDeploy."
+    }
 }

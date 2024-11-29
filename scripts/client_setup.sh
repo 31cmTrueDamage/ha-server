@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install wrk -y
+sudo apt install apache2-utils -y
